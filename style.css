@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 120px 0;
 }
 
 .flex {
@@ -45,17 +45,16 @@ body {
     border-radius: 20px;
     /* margin-top: 130px; */
     font-family: var(--outfit-font);
-    font-size: 20px;
+    font-size: 15px;
     color: var(--wenge-brown);
 }
 
 .recipe-menu{
-    
-    padding: 0 50px 50px 50px;
+    padding: 0 40px 40px 40px;
 }
 
 .recipe-image{ 
-    padding:  50px 50px 0 50px;
+    padding:  40px 40px 0 40px;
 }
 
 .recipe-menu h1,
@@ -64,7 +63,7 @@ body {
 }
 
 .recipe-menu h1 {
-    font-size: 55px;
+    font-size: 40px;
     color: var(--dark-charcoal);
     font-weight: var(--young-serif-weight-400);
 }
