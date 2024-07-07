@@ -1,0 +1,251 @@
+/* - Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%) */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --light-grey: hsl(30, 18%, 87%);
+    --bg-color: #F3E5D8;
+    --brown: #7F4537;
+    --purple: #762D4A;
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    --outfit-font: "Outfit", sans-serif;
+    --outfit-weight-400: 400;
+    --outfit-weight-600: 600;
+    --outfit-weight-700: 700;
+    --young-serif-font: "Young Serif", serif;
+    --young-serif-weight-400: 400;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100dvh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.container {
+    background-color: var(--white);
+    width: 50%;
+    border-radius: 20px;
+    /* margin-top: 130px; */
+    font-family: var(--outfit-font);
+    font-size: 15px;
+    color: var(--wenge-brown);
+}
+
+.recipe-menu{
+    padding: 0 40px 40px 40px;
+}
+
+.recipe-image{ 
+    padding:  40px 40px 0 40px;
+}
+
+.recipe-menu h1,
+.recipe-menu h2 {
+    font-family: var(--young-serif-font);
+}
+
+.recipe-menu h1 {
+    font-size: 40px;
+    color: var(--dark-charcoal);
+    font-weight: var(--young-serif-weight-400);
+}
+
+.recipe-menu h2 {
+    color: var(--brown);
+    font-weight: var(--outfit-weight-400);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.recipe-menu b {
+    color: var(--dark-charcoal);
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.recipe-menu table {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.recipe-menu table tr td {
+    padding: 10px 0;
+    width: 50%;
+}
+
+.recipe-menu table tr td {
+    border-bottom: solid 1px var(--light-grey);
+}
+
+.recipe-menu table tr td:first-child {
+    padding-left: 40px;
+}
+
+.recipe-menu table tr td:last-child {
+    color: var(--brown);
+    font-weight: var(--outfit-weight-700);
+}
+
+.time-info {
+    padding: 25px;
+    background-color: var(--rose-white);
+    border-radius: 10px;
+
+}
+
+.time-info h3 {
+    color: var(--purple);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 25px;
+}
+
+li {
+    padding: 5px;
+    padding-left: 20px;
+
+}
+
+ul li::marker {
+    font-size: 13px;
+    color: var(--brown);
+
+}
+
+ol li::marker {
+    font-weight: bold;
+    color: var(--brown);
+}
+
+@media screen and (max-width:1100px) {
+    .container {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .recipe-image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        min-height: 100dvh;
+        max-width: 100vw;
+    }
+
+    .container {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .flex {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+    }
+    
+    .recipe-image{ 
+        padding:  0;
+    }
+
+    .recipe-menu{
+    
+        padding: 0 25px 25px 25px ;
+    }
+
+    .recipe-menu h1 {
+        font-size: 30px;
+    }
+    
+    .recipe-menu h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESET CSS */
+
+
+h1,
+h2,
+h3,
+p,
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
