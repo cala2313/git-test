@@ -56,7 +56,7 @@ body {
     align-items: center;
     flex-direction: column;
     
-    gap: 30px;
+    gap: 25px;
 }
 
 .container {
@@ -77,8 +77,14 @@ body {
 
 .grid {
     display: grid;
+    margin: 0;
     gap: 15px;
     grid-template-rows: auto;
+}
+
+.login{
+
+    width: 100%;
 }
 
 ul {
