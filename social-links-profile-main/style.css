@@ -1,0 +1,157 @@
+:root {
+    --clr-primary-green: hsl(75, 94%, 57%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grey: hsl(0, 0%, 20%);
+    --clr-neutral-darkGrey: hsl(0, 0%, 12%);
+    --clr-neutral-offBlack: hsl(0, 0%, 8%);
+
+    --txt-font-family: "Inter", sans-serif;
+    --txt-font-w-400: 400;
+    --txt-font-w-600: 600;
+    --txt-font-w-700: 700;
+}
+
+.clr-primary-green {
+    color: var(--clr-primary-green);
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: var(--txt-font-w-600);
+    margin-bottom: 10px;
+
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: var(--txt-font-w-600);
+}
+
+p {
+    font-weight: var(--txt-font-w-400);
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+body {
+    width: 100vw;
+    min-height: 100dvh;
+    padding:100px  0;
+    margin: 0;
+    background-color: var(--clr-neutral-offBlack);
+    color: var(--clr-neutral-white);
+    font-family: var(--txt-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 30px;
+}
+
+.container {
+    min-width: 20%;
+    max-width: 95%;
+    height: auto;
+    background-color: var(--clr-neutral-darkGrey);
+    border-radius: 10px;
+    padding: 40px;
+    /* border: solid 1px white; */
+}
+.user-info { padding: 5px;}
+
+.user-info img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.grid {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul .choice {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--clr-neutral-grey);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: var(--txt-font-w-600);
+}
+
+ul .choice:hover {
+    background-color: var(--clr-primary-green);
+    color: var(--clr-neutral-darkGrey);
+    font-weight: var(--txt-font-w-700);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2,
+h3,
+p,
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+a { text-decoration: none; color: inherit;}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+/* .inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+} */
