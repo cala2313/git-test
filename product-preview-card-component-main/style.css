@@ -1,0 +1,120 @@
+:root {
+    --clr-primary-Cream: hsl(30, 38%, 92%);
+    --clr-primary-DarkCyan: hsl(158, 36%, 37%);
+
+    --clr-neutral-VeryDarkBlue: hsl(212, 21%, 14%);
+    --clr-neutral-DarkGrayishBlue: hsl(228, 12%, 48%);
+    --clr-neutral-White: hsl(0, 0%, 100%);
+
+    --txt-font-family: "Fraunces", serif;
+    --txt-font-family: "Montserrat", sans-serif;
+    --txt-font-w-400: 400;
+    --txt-font-w-700: 700;
+}
+
+.clr-primary-green {
+    color: var(--clr-primary-green);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    background-color: var(--clr-primary-Cream);
+}
+
+.container {
+    border: solid black 1px;
+    width: 40%;
+    height: 60%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section {
+    width: 50%;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2,
+h3,
+p,
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
