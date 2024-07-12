@@ -6,10 +6,19 @@
     --clr-neutral-DarkGrayishBlue: hsl(228, 12%, 48%);
     --clr-neutral-White: hsl(0, 0%, 100%);
 
-    --txt-font-family: "Fraunces", serif;
-    --txt-font-family: "Montserrat", sans-serif;
+    --txt-family-Fraunces: "Fraunces", serif;
+    --txt-family-Montserrat: "Montserrat", sans-serif;
     --txt-font-w-400: 400;
     --txt-font-w-700: 700;
+}
+
+.font-family-Fraunces {
+    font-family: var(--txt-family-Fraunces);
+    
+}
+
+.font-family-Montserrat {
+    font-family: var(--txt-family-Montserrat);
 }
 
 .clr-primary-green {
@@ -20,21 +29,37 @@
     text-align: center;
 }
 
+
 .w-50 {
     width: 50%;
+}
+
+p {
+    font-weight: var(--txt-font-w-400);
+}
+
+h1 {
+    font-size: 38px;
+    color: var(--clr-neutral-VeryDarkBlue);
+    line-height: 38px;
 }
 
 body {
     width: 100vw;
     height: 100dvh;
     background-color: var(--clr-primary-Cream);
+    color: var(--clr-neutral-DarkGrayishBlue);
+    font-weight: var(--txt-font-w-400);
+    flex-direction: column;
 }
 
 .container {
-    border: solid black 1px;
-    width: 40%;
-    height: 60%;
+    max-width: 40%;
+    height: 55%;
+    border-radius: 10px;
+    background-color: var(--clr-neutral-White);
 }
+
 
 .flex {
     display: flex;
@@ -43,10 +68,55 @@ body {
 }
 
 .img-section {
-    width: 50%;
-    background-image: url('./images/image-product-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: fill;
+    height: 100%;
+}
+
+.img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info-section {
+    padding: 35px;
+    height: 100%;
+}
+
+.info-section__content {
+    flex-direction: column;
+    align-items: start;
+    /* gap: 30px; */
+    justify-content: space-between;
+    /* border: 1px red solid; */
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    height: 50px;
+    width: 100%;
+    background-color: var(--clr-primary-DarkCyan);
+    color: var(--clr-neutral-White);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.price {
+    gap: 15px;
+}
+
+.old-price {
+    text-decoration-line: line-through;
+    
+}
+
+.new-price {
+    font-size: 38px;
+    color: var(--clr-primary-DarkCyan);
+    font-weight: var(--txt-font-w-700);
+    text-decoration-line: none;
 }
 
 
@@ -95,9 +165,8 @@ body {
 
 
 
-
-
-
+body,
+h1,
 h2,
 h3,
 p,
