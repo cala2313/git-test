@@ -62,9 +62,14 @@ body {
     justify-content: start;
 
     background-color: var(--clr-neutral-White);
-    box-shadow: 10px 10px;
+    box-shadow: 5px 5px;
     border-radius: 20px;
     border: 1px solid black;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.blog-container:hover {
+    box-shadow: 10px 10px;
 }
 
 .blog-container img {
@@ -84,10 +89,14 @@ body {
 .article-title {
     font-weight: var(--txt-font-w-800);
     font-size: 20px;
+    background-color: var(--clr-neutral-White);
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .blog-article p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     color: var(--clr-neutral-Grey);
 }
@@ -104,7 +113,7 @@ body {
     font-weight: var(--txt-font-w-800);
 }
 
-button {
+.info-box button {
     margin-bottom: 15px;
     padding: 5px 12px;
     background-color: var(--clr-primary-Yellow);
