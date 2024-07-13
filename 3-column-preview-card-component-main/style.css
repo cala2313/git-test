@@ -122,7 +122,7 @@ body {
 
 
 @media screen and (min-width: 800px){
-    p { line-height: 25px; font-size: 15px; padding: 0;}
+    p { line-height: 25px; font-size: 15px; padding: 0; padding-bottom: 40px;}
 
     .container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -130,7 +130,7 @@ body {
 
     .item {max-width: 325px;}
 
-    .learn-more { padding: 10px 30px; margin-top: 100px;}
+    .learn-more { padding: 10px 30px; margin-top: 100px; font-weight: var(--txt-font-w-700);}
 
     .learn-more:hover {
         cursor: pointer;
