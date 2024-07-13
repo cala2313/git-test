@@ -82,13 +82,13 @@ body {
 }
 
 .info-box p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: var(--txt-font-w-500);
 }
 
 .article-title {
     font-weight: var(--txt-font-w-800);
-    font-size: 20px;
+    font-size: 21px;
     background-color: var(--clr-neutral-White);
     margin: 0;
     border: 0;
